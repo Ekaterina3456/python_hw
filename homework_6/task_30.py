@@ -7,12 +7,11 @@ total = int(input('введите количество элементов '))
 raznost = int(input('введите разницу между соседними элементами '))
 
 def numbers (first_num, total, raznost):
-    print(first_num)
+    lst = [first_num]
+    # print(first_num)
     for i in range(total - 1):
         first_num += raznost
-        print(first_num)
+        lst.append(first_num)
+    return lst
 
-numbers(first_num, total, raznost)
-
-
-
+print(numbers(first_num, total, raznost))
